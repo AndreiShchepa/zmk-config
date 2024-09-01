@@ -25,12 +25,12 @@
             // |  ESC  |  Q        |  W      |  E     |    R    |   T     |                                                 |    Y     |    U      |  I      |  O       |   P      |   \  |
             // |  TAB  |  A        |  S      |  D     |    F    |   G     |                                                 |    H     |    J      |  K      |  L       |   ;      |   '  |
             // |       |  SHIFT    |  Z      |  X     |    C    |   V     | L SHIFT |          |    |            | L SHIFT  |    B     |    N      |  M      |  ,       |   .      | CTRL |
-            //                     |         |  DEL   |   RET   |  SPACE  |   ESC   | LAYER 1  |    |  LAYER 2   | TAB      |   BSPC   |   R-ALT   |         |
+            //                     |         |  DEL   |   RET   |  SPACE  |   ESC   | LAYER 1  |    |  LAYER 2   | BSPC     |   TAB   |   R-ALT   |         |           |  
             bindings = <
             &kp ESC      &kp Q       &kp W     &kp E     &kp R    &kp T                                                       &kp Y      &kp U       &kp I     &kp O      &kp P     &kp BSLH
             &kp TAB      &kp A       &kp S     &kp D     &kp F    &kp G                                                       &kp H      &kp J       &kp K     &kp L      &kp SEMI  &kp SQT
             &trans       &kp LSHIFT  &kp Z     &kp X     &kp C    &kp V      &kp LSHFT  &trans        &trans      &kp LSHFT   &kp B      &kp N       &kp M     &kp COMMA  &kp DOT   &kp RCTRL
-                                     &trans    &kp DEL   &kp RET  &kp SPACE  &kp ESC    &mo 1         &mo 2       &kp TAB     &kp BSPC   &kp RALT    &trans
+                                     &kp DEL   &kp RET  &kp SPACE  &kp ESC    &mo 1                   &mo 2       &kp BSPC    &kp BSPC   &kp RALT    &trans    
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -55,7 +55,7 @@
             // |       |   0  |   1  |   2   |   3    |    4   |                            |   5   |   6   |   7   |   8   |   9   |      |
             // |       |      |      |       |        |        |                            |       |       |       |       |       |      |
             // |       |      |      |       |        |        |      |      |      |       |       |       |       |       |       |      |  
-            //                       |       |        |        |      |      |      |       |       |       |       |     
+            //                       |       |        |        |      |      |      |       |       |       |       |       
             bindings = <
                 &trans  &kp N0 &kp N1 &kp N2   &kp N3   &kp N4                               &kp N5  &kp N6   &kp N7  &kp N8  &kp N9  &trans
                 &trans  &trans &trans &trans   &trans   &trans                               &trans  &trans   &trans  &trans  &trans  &trans
