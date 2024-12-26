@@ -16,13 +16,13 @@
             // -------------------------------------------------------------------------------------------------------------------------------
             // |  ESC  |  Q        |  W      |  E     |    R    |   T     |                                                     |    Y     |    U      |  I      |  O       |   P      |  LWIN  |
             // |  TAB  |  A        |  S      |  D     |    F    |   G     |                                                     |    H     |    J      |  K      |  L       |   ;      |  TAB   |
-            // |       |  Z        |         |  X     |    C    |   V     |             |          |       |            |       |    B     |    N      |  M      |  ,       |   .      |        |
+            // |       |  Z        |         |  X     |    C    |   V     |             |          |       |            |       |    B     |    N      |  M      |         |   .      |        |
             //                               |        |   RET   | LSHIFT  |     SPACE   | LAYER 1  |       |  LAYER 2   | BSPC  |    ALT   |    CTRL   |         | 
             bindings = <
-                &kp ESC      &kp Q       &kp W     &kp E     &kp R     &kp T                                                              &kp Y      &kp U      &kp I     &kp O      &kp P     &kp LWIN
-                &kp TAB      &kp A       &kp S     &kp D     &kp F     &kp G                                                              &kp H      &kp J      &kp K     &kp L      &kp SEMI  &kp TAB
-                &trans       &kp Z       &trans    &kp X     &kp C     &kp V    &trans     &trans                 &trans      &trans      &kp B      &kp N      &kp M     &trans     &kp DOT   &trans
-                                               &trans    &kp RET   &kp LSHIFT   &kp SPACE  &mo 1                  &mo 2       &kp BSPC    &kp LALT   &kp LCTRL  &trans    
+                &kp ESC      &kp Q       &kp W     &kp E     &kp R     &kp T                                                           &kp Y      &kp U      &kp I     &kp O      &kp P     &kp LWIN
+                &kp TAB      &kp A       &kp S     &kp D     &kp F     &kp G                                                           &kp H      &kp J      &kp K     &kp L      &kp SEMI  &kp TAB
+                &trans       &kp Z       &trans    &kp X     &kp C     &kp V        &trans     &trans          &trans      &trans      &kp B      &kp N      &kp M     &trans     &kp DOT   &trans
+                                                   &trans    &kp RET   &kp LSHIFT   &kp SPACE  &mo 1           &mo 2       &kp BSPC    &kp LALT   &kp LCTRL  &trans    
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -49,10 +49,10 @@
             // |       |      |   7    |   8    |    9     |      |      |      |    |      |   CTRL  | PG_UP   |  PG_DOWN      |   HOME           |    END         |   LSHIFT        |          | 
             //                         |        |          |      |      |      |    |      |         |         |               |   PRINTSCREEN    |       
             bindings = <
-                &trans  &kp N0  &kp N1  &kp N2   &kp N3   &trans                                      &trans       &trans         &trans             &trans            &trans             &trans
-                &trans  &trans  &kp N4  &kp N5   &kp N6   &trans                                      &trans       &kp UP_ARROW   &kp DOWN_ARROW     &kp LEFT_ARROW    &kp RIGHT_ARROW    &trans
-                &trans  &trans  &kp N7  &kp N8   &kp N9   &trans  &trans  &trans      &trans  &LCTRL  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME           &kp END           &kp LSHIFT         &trans
-                                        &trans   &trans   &trans  &trans  &trans      &trans  &trans  &trans       &trans         &kp PRINTSCREEN
+                &trans  &kp N0  &kp N1  &kp N2   &kp N3   &trans                                         &trans       &trans         &trans             &trans            &trans             &trans
+                &trans  &trans  &kp N4  &kp N5   &kp N6   &trans                                         &trans       &kp UP_ARROW   &kp DOWN_ARROW     &kp LEFT_ARROW    &kp RIGHT_ARROW    &trans
+                &trans  &trans  &kp N7  &kp N8   &kp N9   &trans  &trans  &trans      &trans  &kp LCTRL  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME           &kp END           &kp LSHIFT         &trans
+                                        &trans   &trans   &trans  &trans  &trans      &trans  &trans     &trans       &trans         &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
